@@ -1,0 +1,20 @@
+--- ocaml-ctypes-0.3.3/src/ctypes/type_info_stubs.c.omv~	2014-12-05 14:24:02.805656304 +0100
++++ ocaml-ctypes-0.3.3/src/ctypes/type_info_stubs.c	2014-12-05 14:24:25.976366630 +0100
+@@ -48,7 +48,7 @@ value ctypes_read(value prim_, value off
+    case Uint8_t: b = ctypes_copy_uint8(*(uint8_t *)buf); break;
+    case Uint16_t: b = ctypes_copy_uint16(*(uint16_t *)buf); break;
+    case Uint32_t: b = ctypes_copy_uint32(*(uint32_t *)buf); break;
+-   case Uint64_t: b = ctypes_copy_uint64(*(uint64 *)buf); break;
++   case Uint64_t: b = ctypes_copy_uint64(*(uint64_t *)buf); break;
+    case Camlint: b = Val_int(*(intnat *)buf); break;
+    case Nativeint: b = caml_copy_nativeint(*(intnat *)buf); break;
+    case Float: b = caml_copy_double(*(float *)buf); break;
+@@ -89,7 +89,7 @@ value ctypes_write(value prim_, value of
+    case Uint8_t: *(uint8_t *)buf = Uint8_val(v); break;
+    case Uint16_t: *(uint16_t *)buf = Uint16_val(v); break;
+    case Uint32_t: *(uint32_t *)buf = Uint32_val(v); break;
+-   case Uint64_t: *(uint64 *)buf = Uint64_val(v); break;
++   case Uint64_t: *(uint64_t *)buf = Uint64_val(v); break;
+    case Camlint: *(intnat *)buf = Int_val(v); break;
+    case Nativeint: *(intnat *)buf = Nativeint_val(v); break;
+    case Float: *(float *)buf = Double_val(v); break;
