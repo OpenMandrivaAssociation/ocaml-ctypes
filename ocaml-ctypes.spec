@@ -6,7 +6,7 @@
 Summary:	C type support for OCaml
 Name:		ocaml-%{up_name}
 Version:	0.3.3
-Release:	1
+Release:	2
 Group:		Development/Other
 License:	MIT-style
 Url:            http://github.com/ocamllabs/ocaml-ctypes
