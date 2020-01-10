@@ -41,7 +41,7 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 sed -i -e "s,\$(OCAMLFIND) install,\$(OCAMLFIND) install -destdir %{buildroot}$(ocamlfind printconf destdir) -ldconf ignore,g" Makefile
 %make configure
 touch setup.data
