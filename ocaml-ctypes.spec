@@ -9,7 +9,7 @@ Version:	0.3.3
 Release:	5
 Group:		Development/Other
 License:	MIT-style
-Url:            http://github.com/ocamllabs/ocaml-ctypes
+Url:            https://github.com/ocamllabs/ocaml-ctypes
 Source0:        https://github.com/ocamllabs/ocaml-ctypes/archive/%{version}.tar.gz
 Patch0:		ocaml-ctypes-0.3.3-compile.patch
 BuildRequires:  ocaml-compiler
