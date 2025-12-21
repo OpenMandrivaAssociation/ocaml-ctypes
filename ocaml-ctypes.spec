@@ -12,6 +12,7 @@ License:	MIT-style
 Url:            https://github.com/ocamllabs/ocaml-ctypes
 Source0:        https://github.com/ocamllabs/ocaml-ctypes/archive/%{version}.tar.gz
 Patch0:		ocaml-ctypes-0.3.3-compile.patch
+BuildRequires:	make
 BuildRequires:  ocaml-compiler
 BuildRequires:  ocaml-compiler-libs
 BuildRequires:  ocaml-camlp4
