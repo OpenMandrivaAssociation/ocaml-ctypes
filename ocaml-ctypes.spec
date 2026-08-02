@@ -5,13 +5,13 @@
 
 Summary:	C type support for OCaml
 Name:		ocaml-%{up_name}
-Version:	0.3.3
-Release:	5
+Version:	0.24.0
+Release:	1
 Group:		Development/Other
 License:	MIT-style
 Url:            https://github.com/ocamllabs/ocaml-ctypes
 Source0:        https://github.com/ocamllabs/ocaml-ctypes/archive/%{version}.tar.gz
-Patch0:		ocaml-ctypes-0.3.3-compile.patch
+Patch0:		ocaml-ctypes-0.24.0-compile.patch
 BuildRequires:	make
 BuildRequires:  ocaml-compiler
 BuildRequires:  ocaml-compiler-libs
@@ -44,8 +44,6 @@ developing applications that use %{name}.
 %setup -q
 %autopatch -p1
 sed -i -e "s,\$(OCAMLFIND) install,\$(OCAMLFIND) install -destdir %{buildroot}$(ocamlfind printconf destdir) -ldconf ignore,g" Makefile
-%make configure
-touch setup.data
 
 %build
 # As of 0.3.3, Makefiles aren't SMP safe

@@ -1,0 +1,11 @@
+diff -up ocaml-ctypes-0.24.0/src/ctypes/type_info_stubs.c.omv~ ocaml-ctypes-0.24.0/src/ctypes/type_info_stubs.c
+--- ocaml-ctypes-0.24.0/src/ctypes/type_info_stubs.c.omv~	2025-11-06 10:16:55.000000000 +0100
++++ ocaml-ctypes-0.24.0/src/ctypes/type_info_stubs.c	2026-08-03 00:00:50.267694347 +0200
+@@ -10,6 +10,7 @@
+ #endif
+ 
+ #include <inttypes.h>
++#include <stdint.h>
+ #include <stdio.h>
+ #include <assert.h>
+ #include <string.h>
